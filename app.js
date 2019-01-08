@@ -14,6 +14,7 @@ app.get("/listUsers", function(req, res) {
   fs.readFile(__dirname + "/" + "users.json", "utf8", function(err, data) {
     console.log(data);
     res.end(data);
+    //
   });
 });
 let usern = ["user1", "user2", "user3", "user4"];
